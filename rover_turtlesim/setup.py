@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'controller = rover_turtlesim.turtle_controller:main',
+            'bridge = rover_turtlesim.turtle_bridge:main'
         ],
     },
 )
