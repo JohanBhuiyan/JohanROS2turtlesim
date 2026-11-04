@@ -3,14 +3,14 @@ Python code that allows to move a turtle in TurtleSim using ROS2 and protobuf
 
 2. Program Architecture
 I will make  2 ROS2 nodes in python:
- a. Controller: (Node 1)
-	- accepts keyboard input from user
-	- converts inputs to linear and rotational movements
-	- encode them using Protobuf and sent them to ros2 topic
- b. Bridge: (Node 2)
-	- from the topic, decode the protobuf message
-	- convert the received values into a ROS 2 Twist message.
-	- convert Twist Message to /turtle1/cmd_vel, which TurtleSim will use for movement.
+	a. Controller: (Node 1)
+		- accepts keyboard input from user
+		- converts inputs to linear and rotational movements
+		- encode them using Protobuf and sent them to ros2 topic
+	b. Bridge: (Node 2)
+		- from the topic, decode the protobuf message
+		- convert the received values into a ROS 2 Twist message.
+		- convert Twist Message to /turtle1/cmd_vel, which TurtleSim will use for movement.
 
 Communication Flow:
 
