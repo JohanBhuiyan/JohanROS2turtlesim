@@ -1,0 +1,8 @@
+
+syntax = "proto3";
+
+message Movement{
+    float linear_velocity = 1;
+    float angular_velocity = 2;
+}
+
